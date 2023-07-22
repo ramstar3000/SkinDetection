@@ -1,0 +1,75 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+
+<link href="/static/css/style_detection.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/gh/nicolaspanel/numjs@0.15.1/dist/numjs.min.js"></script>
+
+<script src="/static/js/cnn.js"></script>
+<script src="/static/js/detection.js"></script>
+<br><br><br><br>
+
+
+
+<h1 id="Title_sentence">Please upload your picture</h1>
+
+<!------------
+
+<form action="/main" method="post" enctype="multipart/form-data">
+
+
+<input id='inp' type="file" accept="image/*" onchange="loadFile(event)">
+
+<br>
+
+<img name='output' id="output" alt="your image" />
+
+<br>
+
+<p id= 'txt' > Please check if this image is satisfactory under formatting </p>
+
+<button id="Submit" type="submit" onclick="Sub()">Submit</button>
+
+</form>   ->>>>>>>>>>
+
+<!----
+    <form action="/main" method="post"
+        enctype="multipart/form-data">
+
+        <label for="myfile">Select a file:</label>
+
+        <input type="file" id="myfile"
+            name="myfile" multiple="multiple" />
+
+        <br /><br />
+
+        <input type="submit" ></input>
+    </form>  ---->
+
+
+
+
+<body>
+  <form action="/main" method="post" enctype="multipart/form-data">
+
+    <input type="file" name="image" accept="image/*" id="image" onchange="loadFile(event)" required>
+
+<br>
+
+    <img name='output' id="output" alt="your image" />
+
+      <input type="submit" id="Submit" name="Submit" value="submit" required>
+
+  </form>
+<p id= 'txt' > Please check if this image is satisfactory under formatting </p>
+</body>
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+
+
+p{
+	font-size:2vw;
+	display:inline;
+}
+
+.str{
+	height:4vh;
+	width:20vw;
+
+}
+
+.submit{
+
+	margin-left:60%;
+	margin-top:5%;
+	background-color:lightseagreen;
+	border:None;
+	font-size:3vw
+
+}
+
+div{
+	text-align:center
+	
+
+}
+.form-control{
+	width:60%;
+	margin-left:20%;
+
+}
+
+.btn btn-primary{
+	margin-top:10%
+
+}
